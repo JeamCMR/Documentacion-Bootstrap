@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="titulo">Documentacion de Bootstrap</header>
+        <ul>
+            <li>
+                <a href="#Introduccion" class="nav-link">Introduccion</a>
+            </li>
+            <li>
+                <a href="#Inicio_rápido" class="nav-link">Inicio rápido</a>
+            </li>
+            <li>
+                <a href="#CSS" class="nav-link">CSS</a>
+            </li>
+            <li>
+                <a href="#JavaScript" class="nav-link">JavaScript</a>
+            </li>
+            <li>
+                <a href="#Plantilla_de_inicio" class="nav-link">Plantilla de inicio</a>
+            </li>
+            <li>
+                <a href="#Globales_importantes" class="nav-link">Globales importantes</a>
+            </li>
+            <li>
+                <a href="#HTML5_doctype" class="nav-link">HTML5 doctype</a>
+            </li>
+            <li>
+                <a href="#Etiqueta_meta_responsive" class="nav-link">Etiqueta meta responsive</a>
+            </li>
+            <li>
+                <a href="#Box-sizing" class="nav-link">Box-sizing</a>
+            </li>
+            <li>
+                <a href="#Reiniciar" class="nav-link">Reiniciar</a>
+            </li>
+            <li>
+                <a href="#Comunidad" class="nav-link">Comunidad</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <!--INTRODUCCION-->
+            <header>Introduccion</header>
+            <article>
+                <p id="Introduccion-text">Iníciate en Bootstrap, el framework más popular del mundo para crear sitios
+                    web responsivos,
+                    con jsDelivr y una plantilla de página de inicio..</p>
+            </article>
+        </section>
+        <!--Inicio rapido-->
+        <section class="main-section" id="Inicio_rápido">
+            <header>Inicio rápido</header>
+            <article>
+                <p>¿Quieres añadir rápidamente Bootstrap a tu proyecto? Utilice jsDelivr, proporcionado gratuitamente
+                    por la
+                    de jsDelivr. ¿Utilizas un gestor de paquetes o necesitas descargar los archivos fuente? <a
+                        href="https://getbootstrap.com/docs/4.1/getting-started/download/" target="_blank">Vaya a la
+                        página de descargas</a> .</p>
+            </article>
+        </section>
+        <!--Cascate Style Sheetl-->
+        <section class="main-section" id="CSS">
+            <header>CSS</header>
+            <article>
+                <p>Copie y pegue la hoja de estilo <span id="etiqueta">&lt;link&gt;</span> en tu <span
+                        id="etiqueta">&lt;head&gt;</span> antes que todas las demás hojas de estilo para cargar nuestro
+                    CSS.</p>
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre>
+            </article>
+        </section>
+        <!--JAVASCRIPT-->
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <article>
+                <p>
+                    Muchos de nuestros componentes requieren el uso de JavaScript para funcionar. En concreto, requieren
+                    <a href="https://jquery.com/">jQuery</a>, <a
+                        href="https://floating-ui.com/?utm_source=popper.js.org">Popper.js</a>, y nuestros propios
+                    plugins.
+                    Coloque lo siguiente <span id="etiqueta">&lt;script&gt;</span>s cerca del final de sus páginas,
+                    justo
+                    antes del cierre <span id="etiqueta">&lt;body&gt;</span> para habilitarlos. jQuery debe venir
+                    primero, entonces Popper.js, y luego nuestros plugins JavaScript.
+                </p>
+                <p>Utilizamos <a href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">jQuery’s esbelto
+                        construir,</a> pero también se admite la versión completa.</p>
+                <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                            <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                            <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre>
+                <p>¿Tienes curiosidad por saber qué componentes requieren explícitamente jQuery, our JS y Popper.js?
+                    Haga clic en el enlace
+                    más abajo. Si no está seguro de la estructura general de la página, siga leyendo para ver una
+                    plantilla de página de ejemplo
+                    plantilla de página.</p>
+                <p>Nuestra <span>bootstrap.bundle.js</span> y <span>bootstrap.bundle.min.js</span> incluyen Popper, pero
+                    no jQuery. Para obtener más
+                    información sobre lo que se incluye en Bootstrap, consulte nuestro <a
+                        href="https://getbootstrap.com/docs/4.1/getting-started/contents/#precompiled-bootstrap">contenidos</a>
+                    sección.</p>
+            </article>
+        </section>
+        <!--PLANTILLA DE INICIO-->
+        <section class="main-section" id="Plantilla_de_inicio">
+            <header>Plantilla de inicio</header>
+            <article>Asegúrate de configurar tus páginas con los últimos estándares de diseño y desarrollo. Eso
+                significa utilizar un doctype HTML5 e incluir una etiqueta meta viewport para comportamientos
+                responsivos adecuados. Si lo pones todo junto, tus páginas deberían tener este aspecto:</article>
+            <pre>
+                <code class="language-html" data-lang="html">
+                <span class="cp">&lt;!doctype html&gt;</span>
+                <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;head&gt;</span>
+                    <span class="c">&lt;!-- Required meta tags --&gt;</span>
+                    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+                
+                    <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
+                    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+                
+                    <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
+                  <span class="nt">&lt;/head&gt;</span>
+                  <span class="nt">&lt;body&gt;</span>
+                    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+                
+                    <span class="c">&lt;!-- Optional JavaScript --&gt;</span>
+                    <span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
+                    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.3.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
+                  <span class="nt">&lt;/body&gt;</span>
+                <span class="nt">&lt;/html&gt;</span></code></pre>
+            <p>Eso es todo lo que necesita para los requisitos generales de la página. Visite la página <a
+                    href="https://getbootstrap.com/docs/4.1/layout/overview/">Documentos de diseño</a> o nuestro <a
+                    href="https://getbootstrap.com/docs/4.1/examples/">ejemplos oficiales</a> a
+                empezar a diseñar el contenido y los componentes de su sitio web.</p>
+        </section>
+        <!--Globales importantes-->
+        <section class="main-section" id="Globales_importantes">
+            <header>Globales importantes</header>
+            <article>
+                <p>Bootstrap emplea un puñado de estilos y configuraciones globales importantes que deberás tener en
+                    cuenta cuando lo utilices, todos ellos orientados casi exclusivamente a la normalización de estilos
+                    entre navegadores. Entremos en materia.</p>
+            </article>
+        </section>
+        <!--HTML5 doctype-->
+        <section class="main-section" id="HTML5_doctype">
+            <header>HTML5 doctype</header>
+            <article>
+                <p>Bootstrap requiere el uso del doctype HTML5. Sin él, verás algunos estilos incompletos, pero
+                    incluirlo no debería causar problemas considerables.</p>
+                <pre>
+                        <code class="language-html" data-lang="html">
+                        <span class="cp">&lt;!doctype html&gt;</span>
+                        <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span>
+                        <span class="nt">&gt;</span>
+                          ...
+                        <span class="nt">&lt;/html&gt;</span></code></pre>
+            </article>
+        </section>
+        <!--Etiqueta meta responsive-->
+        <section class="main-section" id="Etiqueta_meta_responsive">
+            <header>Etiqueta meta responsive</header>
+            <p>Bootstrap se desarrolla primero para dispositivos móviles, una estrategia en la que primero se optimiza
+                el código para los dispositivos móviles y luego se amplían los componentes según sea necesario mediante
+                consultas de medios CSS.
+                luego escalamos los componentes según sea necesario utilizando CSS media queries. Para garantizar una
+                representación y un
+                en todos los dispositivos, añada la metaetiqueta responsive viewport a su sitio web.<span
+                    id="etiqueta">&lt;head&gt;</span>
+            </p>
+            <code>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+            </code>
+            <p>Puede ver un ejemplo en la <a
+                    href="https://getbootstrap.com/docs/4.1/getting-started/introduction/#starter-template">plantilla de
+                    inicio</a>.</p>
+        </section>
+        <!--Box-sizing-->
+        <section class="main-section" id="Box-sizing">
+            <header>Box-sizing</header>
+            <p>Para un dimensionamiento más directo en CSS, cambiamos el valor global de box-sizing de content-box a
+                border-box. Esto garantiza que el relleno no afecte a la anchura final calculada de un elemento, pero
+                puede causar problemas con algunos programas de terceros, como Google Maps y Google Custom Search
+                Engine.</p>
+            <p>En las raras ocasiones en que necesite anularlo, utilice algo como lo siguiente:</p>
+            <code>
+                    .selector-for-some-widget {
+                        box-sizing: content-box;
+                      }
+                </code>
+            <p>With the above snippet, nested elements—including generated content via <span
+                    id="etiqueta">::before</span> and <span id="etiqueta">::after—will</span> all
+                inherit the specified <span id="etiqueta">box-sizing</span> for that <span
+                    id="etiqueta">.selector-for-some-widget</span>.</p>
+        </section>
+        <!--Reiniciar -->
+        <section class="main-section" id="Reiniciar">
+            <header>Reiniciar</header>
+            <p>Para mejorar la renderización entre navegadores, utilizamos Reboot para corregir las incoherencias entre
+                navegadores y dispositivos, a la vez que proporcionamos reinicios ligeramente más dictados a elementos
+                HTML comunes.</p>
+        </section>
+        <!--Comunidad-->
+        <section class="main-section" id="Comunidad">
+            <header>Comunidad</header>
+            <p>Mantente al día sobre el desarrollo de Bootstrap y acércate a la comunidad con estos útiles recursos.</p>
+            <ul>
+                <li>
+                    Follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a>.
+                </li>
+                <li>
+                    Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog.</a>
+                </li>
+                <li>
+                    Chat with fellow Bootstrappers in IRC. On the <span id="etiqueta">irc.freenode.net</span> server, in
+                    the <span id="etiqueta">##bootstrap</span> channel.
+                </li>
+                <li>
+                    Implementation help may be found at Stack Overflow (tagged <a
+                        href="https://stackoverflow.com/questions/tagged/bootstrap-4">bootstrap-4</a>).
+                </li>
+                <li>
+                    Developers should use the keyword <span id="etiqueta">bootstrap</span> on packages which modify or
+                    add to the functionality of Bootstrap when distributing through <a
+                        href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms
+                    for maximum discoverability.
+                </li>
+            </ul>
+            <p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the
+                latest gossip and awesome music videos.</p>
+        </section>
+    </main>
+</body>
+
+</html>
